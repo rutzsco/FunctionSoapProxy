@@ -41,6 +41,6 @@ steps:
     
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'HTTPSoapProxy/FunctionAppConsumption.json'
+    PathtoPublish: 'HttpSoapProxy/HTTPSoapProxy/FunctionAppConsumption.json'
     ArtifactName: 'infra'
     publishLocation: 'Container'
