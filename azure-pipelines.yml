@@ -38,3 +38,9 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'app'
     publishLocation: 'Container'
+    
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'HTTPSoapProxy/FunctionAppConsumption.json'
+    ArtifactName: 'infra'
+    publishLocation: 'Container'
